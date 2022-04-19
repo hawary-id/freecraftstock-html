@@ -1,0 +1,16 @@
+.fcs-carousel {
+  .carousel-caption {
+    top: 25%;
+    bottom: auto;
+    @include media-breakpoint-down(md) {
+      top: 10%;
+      bottom: auto;
+    }
+  }
+}
+
+h4 {
+  border-bottom: 2px solid #31d196;
+  display: inline-block;
+  margin-bottom: 20px;
+}

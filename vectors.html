@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Freecraftstock - Vector</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark navbar-fcs fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="images/logo.svg"
+            alt="Logo"
+            height="20"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="vector.html"
+                >Vector</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="photos.html"
+                >Photos</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="btn btn-sm btn-rounded btn-outline-success text-white nav-link px-4 mb-2 mb-md-0"
+                aria-current="page"
+                href="sign-in.html"
+                type="button"
+                >Sign In</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-sm btn-rounded btn-success text-white nav-link px-4"
+                aria-current="page"
+                href="#"
+                type="button"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page-content page-category mb-3">
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <!-- Sidebar -->
+        <div class="border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading w-100">
+            <em class="bi bi-filter-left"></em> Filter
+            <a
+              href=""
+              class="bi bi-arrow-bar-left float-end text-secondary"
+              id="menu-toggle"
+            ></a>
+          </div>
+          <form action="index.html" method="post">
+            <div class="list-group">
+              <a
+                href="#"
+                class="list-group-item collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#category-collapse"
+                aria-expanded="false"
+                ><em class="bi bi-list-ul me-2"></em> Category
+                <em class="bi bi-chevron-down float-end"></em>
+              </a>
+              <div class="collapse" id="category-collapse">
+                <div class="list-group-item">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radiosCategory"
+                      id="radiosCategoryAll"
+                      value="option_category_all"
+                      checked
+                    />
+                    <label class="form-check-label" for="radiosCategoryAll">
+                      All
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radiosCategory"
+                      id="radiosCategoryVectors"
+                      value="option_category_vectors"
+                    />
+                    <label class="form-check-label" for="radiosCategoryVectors">
+                      Vectors
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radiosCategory"
+                      id="radiosCategoryPhotos"
+                      value="option_category_photos"
+                    />
+                    <label class="form-check-label" for="radiosCategoryPhotos">
+                      Photos
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group">
+              <a
+                href=""
+                class="list-group-item collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#license-collapse"
+                aria-expanded="false"
+                ><em class="bi bi-tag me-2"></em> License
+                <em class="bi bi-chevron-down float-end"></em>
+              </a>
+              <div class="collapse" id="license-collapse">
+                <div class="list-group-item">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioLicense"
+                      id="radioLicense"
+                      value="option_license_all"
+                      checked
+                    />
+                    <label class="form-check-label" for="radioLicense">
+                      All
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioLicense"
+                      id="radioLicenseFree"
+                      value="option_license_free"
+                    />
+                    <label class="form-check-label" for="radioLicenseFree">
+                      Free
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="radioLicense"
+                      id="radioLicensePremium"
+                      value="option_license_premium"
+                    />
+                    <label
+                      class="form-check-label text-warning"
+                      for="radioLicensePremium"
+                    >
+                      <img
+                        src="/images/icon/icon-premium.svg"
+                        class="me-2 mb-2"
+                        width="15"
+                        height="15"
+                      />Premium
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group">
+              <button type="submit" class="btn btn-success mt-2">Apply</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <section class="page-search">
+            <div class="container-fluid border-bottom">
+              <div class="d-flex bd-highlight py-2">
+                <div class="bd-highlight me-2 btn-filter">
+                  <button
+                    class="btn btn-secondary btn-rounded"
+                    id="menu-toggle2"
+                  >
+                    <i class="bi bi-filter-left"></i> Filter
+                  </button>
+                </div>
+
+                <div class="flex-fill bd-highlight">
+                  <form>
+                    <div class="input-group">
+                      <button
+                        class="btn btn-dropdown dropdown-toggle btn-rounded"
+                        type="button"
+                        id="dropdownMenuClickableInside"
+                        data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside"
+                        aria-expanded="false"
+                      >
+                        Vectors, Photos
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radiosCategory"
+                              id="radiosCategoryAll"
+                              value="option_category_all"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="radiosCategoryAll"
+                            >
+                              All
+                            </label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radiosCategory"
+                              id="radiosCategoryVectors"
+                              value="option_category_vectors"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="radiosCategoryVectors"
+                            >
+                              Vectors
+                            </label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radiosCategory"
+                              id="radiosCategoryPhotos"
+                              value="option_category_photos"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="radiosCategoryPhotos"
+                            >
+                              Photos
+                            </label>
+                          </div>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radioLicense"
+                              id="radioLicense"
+                              value="option_license_all"
+                              checked
+                            />
+                            <label class="form-check-label" for="radioLicense">
+                              All
+                            </label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radioLicense"
+                              id="radioLicenseFree"
+                              value="option_license_free"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="radioLicenseFree"
+                            >
+                              Free
+                            </label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radioLicense"
+                              id="radioLicensePremium"
+                              value="option_license_premium"
+                            />
+                            <label
+                              class="form-check-label text-warning"
+                              for="radioLicensePremium"
+                            >
+                              <img
+                                src="/images/icon/icon-premium.svg"
+                                class="me-2 mb-2"
+                                width="15"
+                                height="15"
+                              />Premium
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                      <input
+                        class="form-control"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-success btn-rounded" type="submit">
+                        Search
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="page-content">
+            <div class="container-fluid">
+              <div class="row g-3">
+                <div
+                  class="col-6 col-md-4 col-lg-3"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <a href="" class="component-products d-block">
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/easter-egg-design-mockup_23-2149355650.webp');
+                        "
+                      ></div>
+                      <p class="products-text">Ied Mubarak</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                        Admin
+                      </div>
+                      <div class="products-download">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                        <img
+                          src="/images/icon/download.svg"
+                          class="mb-1 ms-2"
+                          width="15"
+                          height="15"
+                        />
+                        3
+                      </div>
+                      <div class="products-category">Photo</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-md-4 col-lg-3"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <a href="" class="component-products d-block">
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/flat-eid-al-fitr-background_52683-83876.webp');
+                        "
+                      ></div>
+                      <p class="products-text">Ramadhan Kaream</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                        Admin
+                      </div>
+                      <div class="products-download">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                        <img
+                          src="/images/icon/download.svg"
+                          class="mb-1 ms-2"
+                          width="15"
+                          height="15"
+                        />
+                        3
+                      </div>
+                      <div class="products-category">Vector</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-md-4 col-lg-3"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <a href="" class="component-products d-block">
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/flat-eid-al-fitr-instagram-posts-collection_52683-83448.webp');
+                        "
+                      ></div>
+                      <p class="products-text">Happy Ied Mubarak</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                        Admin
+                      </div>
+                      <div class="products-download">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                        <img
+                          src="/images/icon/download.svg"
+                          class="mb-1 ms-2"
+                          width="15"
+                          height="15"
+                        />
+                        3
+                      </div>
+                      <div class="products-category">Vector</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-md-4 col-lg-3"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <a href="" class="component-products d-block">
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/happy-easter-backgroundpaper-art-product-display-podium-mockupbanner-template-designvector-illustration_44481-697.webp');
+                        "
+                      ></div>
+                      <p class="products-text">Blue Flowers</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                        Admin
+                      </div>
+                      <div class="products-download">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                        <img
+                          src="/images/icon/download.svg"
+                          class="mb-1 ms-2"
+                          width="15"
+                          height="15"
+                        />
+                        3
+                      </div>
+                      <div class="products-category">Vector</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-md-4 col-lg-3"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <a href="" class="component-products d-block">
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/happy-easter-backgroundproduct-display-mockupbanner-template-designpaper-art-vector-illustration_44481-700.webp');
+                        "
+                      ></div>
+                      <p class="products-text">March 2022</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                        Admin
+                      </div>
+                      <div class="products-download">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                        <img
+                          src="/images/icon/download.svg"
+                          class="mb-1 ms-2"
+                          width="15"
+                          height="15"
+                        />
+                        3
+                      </div>
+                      <div class="products-category">Vector</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-md-4 col-lg-3"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <a href="" class="component-products d-block">
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/islamic-decoration-background-with-crescent-lantern-ketupat_257995-878.webp');
+                        "
+                      ></div>
+                      <p class="products-text">Islamic</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                        Admin
+                      </div>
+                      <div class="products-download">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                        <img
+                          src="/images/icon/download.svg"
+                          class="mb-1 ms-2"
+                          width="15"
+                          height="15"
+                        />
+                        3
+                      </div>
+                      <div class="products-category">Vector</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-md-4 col-lg-3"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
+                  <a href="" class="component-products d-block">
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/ramadan-celebration-banner_317810-3373.webp');
+                        "
+                      ></div>
+                      <p class="products-text">Islamic</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                        Admin
+                      </div>
+                      <div class="products-download">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                        <img
+                          src="/images/icon/download.svg"
+                          class="mb-1 ms-2"
+                          width="15"
+                          height="15"
+                        />
+                        3
+                      </div>
+                      <div class="products-category">Vector</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="col-6 col-md-4 col-lg-3"
+                  data-aos="fade-up"
+                  data-aos-delay="800"
+                >
+                  <a href="" class="component-products d-block">
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/still-life-crown-thorns_23-2149374817.webp');
+                        "
+                      ></div>
+                      <p class="products-text">Islamic</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                        Admin
+                      </div>
+                      <div class="products-download">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                        <img
+                          src="/images/icon/download.svg"
+                          class="mb-1 ms-2"
+                          width="15"
+                          height="15"
+                        />
+                        3
+                      </div>
+                      <div class="products-category">Vector</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted" data-aos="fade-up">
+      <div class="container-fluid">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <em class="bi bi-facebook"></em>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <em class="bi bi-instagram"></em>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <em class="bi bi-google"></em>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <em class="bi bi-youtube"></em>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+      </div>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container-fluid text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img src="/images/logo.svg" alt="" />
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Categories</h6>
+              <p>
+                <a href="#!" class="text-reset">Vector</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Photos</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Term of User</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><em class="bi bi-house me-3"></em> Tangerang, Indonesia</p>
+              <p>
+                <em class="bi bi-envelope me-3"></em>
+                freecrarftstock@gmail.com
+              </p>
+              <p><em class="bi bi-telephone me-3"></em> + 01 234 567 88</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2022 Copyright |
+        <a class="text-reset fw-bold" href="">freecraftstock.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/script/navbar-scroll.js"></script>
+    <script>
+      $("#menu-toggle2").hide();
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#menu-toggle2").show();
+        $("#wrapper").toggleClass("toggled");
+      });
+      $("#menu-toggle2").click(function (e) {
+        e.preventDefault();
+        $("#menu-toggle2").hide();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>

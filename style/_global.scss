@@ -1,0 +1,49 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.page-content {
+  margin-top: 55px;
+  a {
+    text-decoration: none;
+  }
+}
+
+footer {
+  background-color: #052d44;
+  a {
+    &:hover {
+      color: #24a978 !important;
+    }
+  }
+}
+
+.form-control {
+  background-color: #e5e5e5;
+  border-radius: 100px;
+}
+
+.btn-rounded {
+  border-radius: 100px;
+}
+
+.btn-dropdown {
+  border-color: #cecccc;
+  background-color: #e5e5e5;
+}
+
+.text-primary {
+  color: #31d196 !important;
+}
+.profile-picture {
+  position: inline-block;
+  bottom: 8px;
+  left: 8px;
+  img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

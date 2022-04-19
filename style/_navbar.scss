@@ -1,0 +1,27 @@
+.navbar-fcs {
+  background-color: #052d44;
+
+  .nav-item {
+    .nav-link {
+      @include media-breakpoint-up(lg) {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    &:hover {
+      color: #24a978 !important;
+    }
+  }
+
+  .profile-picture {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .navbar-fixed-top.scrolled {
+    background-color: #052d44 !important;
+    transition: background-color 200ms linear;
+  }
+}

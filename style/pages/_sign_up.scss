@@ -1,0 +1,19 @@
+.page-sign-up {
+  .sign-up {
+    margin-top: 10vh;
+    @include media-breakpoint-down(md) {
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+    }
+    h5 {
+      color: #31d196;
+      border-bottom: 2px solid #31d196;
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+      color: #31d196;
+    }
+  }
+}

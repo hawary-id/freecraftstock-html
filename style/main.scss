@@ -1,0 +1,14 @@
+// Import Bootstrap 5 Library
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+@import "icons";
+@import "global";
+@import "fonts";
+@import "navbar";
+
+@import "pages/home";
+@import "pages/category";
+@import "pages/sign_in";
+@import "pages/sign_up";
+
+@import "components/card_product";
