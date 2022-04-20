@@ -19,7 +19,7 @@
       .profile-name,
       .products-text,
       .products-category,
-      .products-download {
+      .products-like {
         display: block;
       }
     }
@@ -58,7 +58,7 @@
       display: none;
     }
 
-    .products-download {
+    .products-like {
       position: absolute;
       bottom: 10px;
       right: 12px;

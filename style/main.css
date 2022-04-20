@@ -12179,11 +12179,11 @@ h4, .h4 {
 .component-products .products-thumbnail:hover .profile-name,
 .component-products .products-thumbnail:hover .products-text,
 .component-products .products-thumbnail:hover .products-category,
-.component-products .products-thumbnail:hover .products-download, .component-products .products-thumbnail:focus .profile-picture,
+.component-products .products-thumbnail:hover .products-like, .component-products .products-thumbnail:focus .profile-picture,
 .component-products .products-thumbnail:focus .profile-name,
 .component-products .products-thumbnail:focus .products-text,
 .component-products .products-thumbnail:focus .products-category,
-.component-products .products-thumbnail:focus .products-download {
+.component-products .products-thumbnail:focus .products-like {
   display: block;
 }
 
@@ -12227,7 +12227,7 @@ h4, .h4 {
   display: none;
 }
 
-.component-products .products-thumbnail .products-download {
+.component-products .products-thumbnail .products-like {
   position: absolute;
   bottom: 10px;
   right: 12px;
