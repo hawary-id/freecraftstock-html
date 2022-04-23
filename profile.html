@@ -71,21 +71,40 @@
                   class="rounded-circle me-2 profile-picture"
                 />Hi, Syamsul
               </a>
-              <div class="dropdown-menu dropdown-menu-end">
-                <div class="dropdown-item px-5 py-3">
+              <div
+                class="dropdown-menu dropdown-menu-end"
+                style="min-width: inherit"
+              >
+                <a href="" class="dropdown-item mt-2">
                   <img
                     src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
                     alt=""
                     class="rounded-circle me-2 profile-picture"
                   />Syamsul Hadi
-                  <br />
-                  <button class="btn btn-sm btn-success px-4 mt-2">
-                    Edit Profile
-                  </button>
-                </div>
-                <a href="" class="dropdown-item"> </a>
-                <div class="dropdown-devider"></div>
-                <a href="" class="dropdown-item">Sign Out</a>
+                </a>
+                <hr class="dropdown-devider" />
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-person-check me-2"></em>Following
+                  <span class="badge rounded-pill bg-secondary float-end"
+                    >99k</span
+                  ></a
+                >
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-heart me-2"></em>Favorites<span
+                    class="badge rounded-pill bg-danger float-end"
+                    >99k</span
+                  ></a
+                >
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-download me-2"></em>Download</a
+                >
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-folder-plus me-2"></em>Collections</a
+                >
+                <hr class="dropdown-devider" />
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-box-arrow-right me-2"></em>Sign Out</a
+                >
               </div>
             </li>
           </ul>
@@ -101,22 +120,13 @@
         </div>
       </div>
     </nav>
-    <div class="page-content page-category mb-3">
+    <div class="page-content page-profile mb-3">
       <div class="d-flex" id="wrapper" data-aos="fade-right">
         <!-- Page Content -->
         <div id="page-content-wrapper">
           <section class="page-search">
             <div class="container-fluid border-bottom">
-              <div class="d-flex bd-highlight py-2">
-                <div class="bd-highlight btn-filter">
-                  <button
-                    class="btn btn-secondary btn-rounded"
-                    id="menu-toggle2"
-                  >
-                    <i class="bi bi-filter-left"></i> Filter
-                  </button>
-                </div>
-
+              <div class="d-flex bd-highlight py-2 mt-2">
                 <div class="flex-fill bd-highlight">
                   <form>
                     <div class="input-group">
@@ -254,51 +264,172 @@
               </div>
             </div>
           </section>
-          <section class="page-content">
-            <div class="container-fluid">
+          <section class="tab-profile">
+            <ul class="nav justify-content-center bg-white py-2 mb-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><em class="bi bi-person me-2"></em
+                  ><span class="d-none d-md-inline">Profile</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><em class="bi bi-download me-2"></em
+                  ><span class="d-none d-md-inline">Downloads</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><em class="bi bi-heart me-2"></em
+                  ><span class="d-none d-md-inline">Favorites</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><em class="bi bi-folder-plus me-2"></em
+                  ><span class="d-none d-md-inline">Collections</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><em class="bi bi-person-check me-2"></em
+                  ><span class="d-none d-md-inline">Following</span></a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="page-profile">
+            <div class="container">
               <div class="row g-3">
                 <div
-                  class="col-6 col-md-4 col-lg-3"
-                  data-aos="fade-up"
+                  class="col-md-3 col-12"
+                  data-aos="fade-left"
                   data-aos-delay="100"
                 >
-                  <a
-                    href=""
-                    class="component-products d-block"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                  >
-                    <div class="products-thumbnail">
-                      <div
-                        class="products-image"
-                        style="
-                          background-image: url('images/product/easter-egg-design-mockup_23-2149355650.webp');
-                        "
-                      ></div>
-                      <p class="products-text">Ied Mubarak</p>
-                      <div class="profile-picture">
-                        <img
-                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
-                          class=""
-                          width="15"
-                          height="15"
-                        />
-                      </div>
-                      <span class="ms-1 profile-name">Admin</span>
-
-                      <div class="products-like">
-                        <em class="bi bi-heart-fill pe-1"></em>5k
-                      </div>
-                      <div class="products-category">Photo</div>
-                      <div class="products-license text-center">
-                        <img src="/images/icon/icon-premium.svg" alt="" />
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12 text-center float-center">
+                          <a
+                            href=""
+                            class="profile-edit"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalUploadPicture"
+                          >
+                            <img
+                              src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                              alt=""
+                            />
+                            <h2 class="bi bi-pencil-square"></h2>
+                          </a>
+                          <h5 class="card-title mt-2">Syamsul Hadi</h5>
+                          <small class="card-subtitle text-muted">
+                            syamsulipem@gmail.com
+                          </small>
+                          <hr />
+                        </div>
+                        <div class="col-12">
+                          <div class="d-flex bd-highlight text-muted">
+                            <small class="flex-fill p-1 bd-highlight">
+                              1,054 Posts
+                            </small>
+                            <small class="flex-fill p-1 bd-highlight">
+                              1,200 Follower
+                            </small>
+                            <small class="flex-fill p-1 bd-highlight">
+                              1,011 Following
+                            </small>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-9">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title mb-3">Account Data</h4>
+                      <form>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Your Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Your Name"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            value="syamsulipem@gmail.com"
+                            placeholder="Email Address"
+                            disabled
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleInputPassword1"
+                          />
+                        </div>
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-rounded"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalUploadPicture"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
       </div>
     </div>

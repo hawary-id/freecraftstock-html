@@ -1,0 +1,56 @@
+.page-profile {
+  .profile-edit {
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+    h2 {
+      display: none;
+      position: absolute;
+      color: #31d196;
+      margin-top: -28%;
+      margin-left: 48%;
+      @include media-breakpoint-down(md) {
+        margin-top: -22%;
+        margin-left: 50%;
+      }
+    }
+    &:hover {
+      img {
+        filter: brightness(50%);
+      }
+      h2 {
+        display: block;
+      }
+    }
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    background: #f5f5fb;
+    .page-search {
+      background: #ffffff;
+    }
+    .tab-profile {
+      a {
+        color: rgba(88, 87, 87, 0.733);
+        &.active {
+          color: #31d196;
+          border-bottom: 1px solid #31d196;
+        }
+        @include media-breakpoint-down(md) {
+          &.active {
+            color: #31d196;
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .page-content {
+    margin-top: 10px;
+  }
+}
