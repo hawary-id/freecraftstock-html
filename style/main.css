@@ -11975,6 +11975,10 @@ footer {
   background-color: #052d44;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 footer a:hover {
   color: #24a978 !important;
 }
@@ -12111,7 +12115,13 @@ h4, .h4 {
   margin-top: 10px;
 }
 
-.page-profile .profile-edit img {
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+  background: #f5f5fb;
+}
+
+#page-content-wrapper .profile-edit img {
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
@@ -12119,58 +12129,113 @@ h4, .h4 {
   border-radius: 100%;
 }
 
-.page-profile .profile-edit h2, .page-profile .profile-edit .h2 {
+#page-content-wrapper .profile-edit h2, #page-content-wrapper .profile-edit .h2 {
   display: none;
   position: absolute;
-  color: #31d196;
   margin-top: -28%;
   margin-left: 48%;
 }
 
 @media (max-width: 767.98px) {
-  .page-profile .profile-edit h2, .page-profile .profile-edit .h2 {
+  #page-content-wrapper .profile-edit h2, #page-content-wrapper .profile-edit .h2 {
     margin-top: -22%;
     margin-left: 50%;
   }
 }
 
-.page-profile .profile-edit:hover img {
+#page-content-wrapper .profile-edit:hover img {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
 
-.page-profile .profile-edit:hover h2, .page-profile .profile-edit:hover .h2 {
+#page-content-wrapper .profile-edit:hover h2, #page-content-wrapper .profile-edit:hover .h2 {
   display: block;
 }
 
-.page-profile #page-content-wrapper {
-  min-width: 0;
-  width: 100%;
-  background: #f5f5fb;
+#page-content-wrapper .btn-outline-danger:hover {
+  background-color: #e7dedd;
 }
 
-.page-profile #page-content-wrapper .page-search {
+#page-content-wrapper .page-search {
   background: #ffffff;
 }
 
-.page-profile #page-content-wrapper .tab-profile a {
+#page-content-wrapper .page-nav-profile a {
   color: rgba(88, 87, 87, 0.733);
 }
 
-.page-profile #page-content-wrapper .tab-profile a.active {
+#page-content-wrapper .page-nav-profile a.active {
   color: #31d196;
   border-bottom: 1px solid #31d196;
 }
 
 @media (max-width: 767.98px) {
-  .page-profile #page-content-wrapper .tab-profile a.active {
+  #page-content-wrapper .page-nav-profile a.active {
     color: #31d196;
     border-bottom: 0;
   }
 }
 
-.page-profile .page-content {
-  margin-top: 100px;
+@media (min-width: 768px) {
+  #page-content-wrapper .page-detail-profile {
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-download {
+    padding-bottom: 200px;
+  }
+}
+
+.img-author img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+h6, .h6 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .page-follower {
+    padding-bottom: 200px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-follower .author-md {
+    display: none;
+  }
+}
+
+.page-author .img-author img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.page-author h5, .page-author .h5 {
+  margin-bottom: 0;
+}
+
+.page-author .btn-follow:hover {
+  border-color: #dd4242;
+  background-color: #c5c2c2;
+}
+
+.page-author .btn-follow:hover span {
+  display: none;
+}
+
+.page-author .btn-follow:hover:before {
+  content: "Unfollow";
+  color: #dd4242;
 }
 
 .page-sign-in .sign-in {

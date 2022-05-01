@@ -267,11 +267,7 @@
           <section class="page-nav-profile" data-aos="fade-left">
             <ul class="nav justify-content-center bg-white py-2 mb-3">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="profile.html"
-                >
+                <a class="nav-link" aria-current="page" href="profile.html">
                   <e class="bi bi-person me-2"></e>
                   <span class="d-none d-md-inline">Profile</span>
                 </a>
@@ -283,7 +279,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="favorite.html">
+                <a class="nav-link active" href="favorite.html">
                   <em class="bi bi-heart me-2"></em>
                   <span class="d-none d-md-inline">Favorites</span>
                 </a>
@@ -308,129 +304,47 @@
               </li>
             </ul>
           </section>
-          <section class="page-detail-profile mb-3">
+          <section class="page-download mb-3">
             <div class="container">
-              <div class="row g-3">
+              <div class="row g-2">
                 <div
-                  class="col-md-3 col-12"
-                  data-aos="fade-left"
+                  class="col-6 col-md-3"
+                  data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-12 text-center float-center">
-                          <a
-                            href=""
-                            class="profile-edit"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalUploadPicture"
-                          >
-                            <img
-                              src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
-                              alt=""
-                            />
-                            <h2 class="bi bi-pencil-square text-white"></h2>
-                          </a>
-                          <h5 class="card-title mt-2">Syamsul Hadi</h5>
-                          <small class="card-subtitle text-muted">
-                            syamsulipem@gmail.com
-                          </small>
-                          <hr />
-                        </div>
-                        <div class="col-12">
-                          <div class="d-flex bd-highlight text-muted">
-                            <small class="flex-fill p-1 bd-highlight">
-                              1,054 Posts
-                            </small>
-                            <small class="flex-fill p-1 bd-highlight">
-                              1,200 Follower
-                            </small>
-                            <small class="flex-fill p-1 bd-highlight">
-                              1,011 Following
-                            </small>
-                          </div>
-                        </div>
-                        <div class="col-12 d-grid">
-                          <hr />
+                  <a
+                    href=""
+                    class="component-products d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    <div class="products-thumbnail">
+                      <div
+                        class="products-image"
+                        style="
+                          background-image: url('images/product/easter-egg-design-mockup_23-2149355650.webp');
+                        "
+                      ></div>
+                      <p class="products-text">Ied Mubarak</p>
+                      <div class="profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class=""
+                          width="15"
+                          height="15"
+                        />
+                      </div>
+                      <span class="ms-1 profile-name">Admin</span>
 
-                          <button
-                            class="btn btn-warning btn-rounded"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalChangePassword"
-                          >
-                            Change Password
-                          </button>
-                        </div>
+                      <div class="products-like">
+                        <em class="bi bi-heart-fill pe-1"></em>5k
+                      </div>
+                      <div class="products-category">Photo</div>
+                      <div class="products-license text-center">
+                        <img src="/images/icon/icon-premium.svg" alt="" />
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-9" data-aos="fade-up">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title mb-3">Account Data</h4>
-                      <form>
-                        <div class="mb-3">
-                          <label for="name" class="form-label">Your Name</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            name="name"
-                            placeholder="Your Name"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label for="email" class="form-label"
-                            >Email address</label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            name="email"
-                            value="syamsulipem@gmail.com"
-                            placeholder="Email Address"
-                            disabled
-                          />
-                        </div>
-
-                        <div class="d-none d-md-inline-block">
-                          <button
-                            type="submit"
-                            class="btn btn-success btn-rounded px-5"
-                          >
-                            Save
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger text-danger btn-rounded"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalCloseAccount"
-                          >
-                            Close my account
-                          </button>
-                        </div>
-                        <div class="d-md-none d-grid gap-2">
-                          <button
-                            type="submit"
-                            class="btn btn-success btn-rounded"
-                          >
-                            Save
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger text-danger btn-rounded"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalCloseAccount"
-                          >
-                            Close my account
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -438,22 +352,21 @@
         </div>
       </div>
     </div>
-    <!-- Modal change profile picture-->
+    <!-- First modal-->
     <div
       class="modal fade"
-      id="modalUploadPicture"
+      id="staticBackdrop"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
       tabindex="-1"
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog dialog-sm">
+      <div
+        class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-scrollable"
+      >
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Change Profile Picture
-            </h5>
             <button
               type="button"
               class="btn-close"
@@ -462,39 +375,178 @@
             ></button>
           </div>
           <div class="modal-body">
-            <label for="file" class="label-from mb-2">Upload Picture</label>
-            <input type="file" class="form-control" name="photo" id="photo" />
-          </div>
-          <div class="modal-footer d-flex bd-highlight">
-            <button
-              type="button"
-              class="btn btn-secondary btn-rounded flex-fill bd-highlight"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button
-              type="button"
-              class="btn btn-success btn-rounded flex-fill bd-highlight"
-            >
-              Upload
-            </button>
+            <div class="row">
+              <div class="col-12 col-md-9">
+                <img
+                  src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+                <h6 class="mt-2">Ied Mubarak</h6>
+              </div>
+              <div class="col-12 col-md-3">
+                <img
+                  src="/images/product/flat-eid-al-fitr-background_52683-83876.webp"
+                  class="img-fluid d-none d-md-block"
+                  alt=""
+                />
+                <div class="row mt-3">
+                  <div class="col-12 d-flex bd-highlight">
+                    <button
+                      class="btn btn-sm btn-outline-secondary d-flex flex-fill bd-highlight justify-content-center"
+                    >
+                      <em class="bi bi-folder-plus me-2"></em> Collect
+                    </button>
+                    <button
+                      class="btn btn-sm btn-outline-secondary mx-2 position-relative"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Like"
+                    >
+                      <em class="bi bi-heart"></em
+                      ><span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+
+                    <button
+                      class="btn btn-sm btn-outline-secondary"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Copy Link"
+                    >
+                      <em class="bi bi-link-45deg"></em>
+                    </button>
+                    <button
+                      class="btn btn-sm btn-outline-secondary ms-2"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Comment"
+                    >
+                      <em class="bi bi-chat-left"></em>
+                    </button>
+                  </div>
+                  <div class="d-grid mt-2">
+                    <button class="btn btn-success">Download</button>
+                  </div>
+                  <div class="col-12">
+                    <hr />
+                    <p class="lh-sm">
+                      <em class="bi bi-bounding-box-circles"></em> Vector in IPS
+                      format <a href="">How to edit?</a>
+                    </p>
+                    <p class="lh-sm">
+                      Premium License
+                      <br />
+                      <small
+                        >Go Premium and you will receive a commercial license.
+                        <a href="">More info</a></small
+                      >
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <hr />
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0 profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                      </div>
+                      <div class="flex-grow-1 ms-2">
+                        <div
+                          class="d-flex align-items-start flex-column bd-highlight lh-sm"
+                        >
+                          <div class="bd-highlight">Admin</div>
+                          <small class="bd-highlight pb-1">100k</small>
+                        </div>
+                      </div>
+                      <button
+                        class="btn btn-sm btn-outline-secondary d-flex flex-fill bd-highlight justify-content-center"
+                      >
+                        Follow
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <hr />
+                <div class="form-text mb-2">Recomended</div>
+                <div class="row g-3">
+                  <div
+                    class="col-6 col-md-4 col-lg-3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <a
+                      href=""
+                      class="component-products d-block"
+                      data-bs-target="#staticBackdrop2"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      <div class="products-thumbnail">
+                        <div
+                          class="products-image"
+                          style="
+                            background-image: url('images/product/easter-egg-design-mockup_23-2149355650.webp');
+                          "
+                        ></div>
+                        <p class="products-text">Ied Mubarak</p>
+                        <div class="profile-picture">
+                          <img
+                            src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                            class=""
+                            width="15"
+                            height="15"
+                          />
+                        </div>
+                        <span class="ms-1 profile-name">Admin</span>
+
+                        <div class="products-like">
+                          <em class="bi bi-heart-fill pe-1"></em>5k
+                        </div>
+                        <div class="products-category">Photo</div>
+                        <div class="products-license text-center">
+                          <img src="/images/icon/icon-premium.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 text-center" data-aos="fade-up">
+                    <button class="btn btn-success btn-rounded px-5 py-2">
+                      View More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Modal Close my Account-->
+    <!-- Second modal-->
     <div
       class="modal fade"
-      id="modalCloseAccount"
+      id="staticBackdrop2"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div
+        class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-scrollable"
+      >
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title text-danger">Attention !</h5>
             <button
               type="button"
               class="btn-close"
@@ -503,111 +555,158 @@
             ></button>
           </div>
           <div class="modal-body">
-            <span>You are going to close your account.</span>
-            <p class="text-danger"><strong>Are you sure?</strong></p>
-            <p>
-              <i
-                >Note that you will close your <b>Freecraftstock</b> account and
-                all your files will be permanently deleted ! Your premium
-                subscription will also be canceled without a refund.</i
-              >
-            </p>
-          </div>
-          <div class="modal-footer d-flex bd-highlight">
-            <button
-              type="button"
-              class="btn btn-danger flex-fill bd-highlight"
-              data-bs-dismiss="modal"
-            >
-              Keep account
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-secondary flex-fill bd-highlight"
-            >
-              Close account
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Change Password -->
-    <div
-      class="modal fade"
-      id="modalChangePassword"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-danger">Change Password</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <form>
-            <div class="modal-body">
-              <div class="mb-3">
-                <label for="current_password" class="col-form-label"
-                  >Current Password:</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="current_password"
-                  name="current_password"
-                  placeholder="Current Password"
-                  required
+            <div class="row">
+              <div class="col-12 col-md-9">
+                <img
+                  src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                  alt=""
+                  class="img-fluid"
                 />
+                <h6 class="mt-2">Ied Mubarak</h6>
               </div>
-              <div class="mb-3">
-                <label for="new_password" class="col-form-label"
-                  >New Password:</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="new_password"
-                  name="new_password"
-                  placeholder="New Password"
-                  required
+              <div class="col-12 col-md-3">
+                <img
+                  src="/images/product/flat-eid-al-fitr-background_52683-83876.webp"
+                  class="img-fluid d-none d-md-block"
+                  alt=""
                 />
+                <div class="row mt-3">
+                  <div class="col-12 d-flex bd-highlight">
+                    <button
+                      class="btn btn-sm btn-outline-secondary d-flex flex-fill bd-highlight justify-content-center"
+                    >
+                      <em class="bi bi-folder-plus me-2"></em> Collect
+                    </button>
+                    <button
+                      class="btn btn-sm btn-outline-secondary mx-2 position-relative"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Like"
+                    >
+                      <em class="bi bi-heart"></em
+                      ><span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+
+                    <button
+                      class="btn btn-sm btn-outline-secondary"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Copy Link"
+                    >
+                      <em class="bi bi-link-45deg"></em>
+                    </button>
+                    <button
+                      class="btn btn-sm btn-outline-secondary ms-2"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Comment"
+                    >
+                      <em class="bi bi-chat-left"></em>
+                    </button>
+                  </div>
+                  <div class="d-grid mt-2">
+                    <button class="btn btn-success">Download</button>
+                  </div>
+                  <div class="col-12">
+                    <hr />
+                    <p class="lh-sm">
+                      <em class="bi bi-bounding-box-circles"></em> Vector in IPS
+                      format <a href="">How to edit?</a>
+                    </p>
+                    <p class="lh-sm">
+                      Premium License
+                      <br />
+                      <small
+                        >Go Premium and you will receive a commercial license.
+                        <a href="">More info</a></small
+                      >
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <hr />
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0 profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                      </div>
+                      <div class="flex-grow-1 ms-2">
+                        <div
+                          class="d-flex align-items-start flex-column bd-highlight lh-sm"
+                        >
+                          <div class="bd-highlight">Admin</div>
+                          <small class="bd-highlight pb-1">100k</small>
+                        </div>
+                      </div>
+                      <button
+                        class="btn btn-sm btn-outline-secondary d-flex flex-fill bd-highlight justify-content-center"
+                      >
+                        Follow
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="confirmation_password" class="col-form-label"
-                  >Confirmation Password:</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="confirmation_password"
-                  name="confirmation_password"
-                  placeholder="Confirmation New Password"
-                  required
-                />
+              <div class="col-12">
+                <hr />
+                <div class="form-text mb-2">Recomended</div>
+                <div class="row g-3">
+                  <div
+                    class="col-6 col-md-4 col-lg-3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <a
+                      href=""
+                      class="component-products d-block"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      <div class="products-thumbnail">
+                        <div
+                          class="products-image"
+                          style="
+                            background-image: url('images/product/easter-egg-design-mockup_23-2149355650.webp');
+                          "
+                        ></div>
+                        <p class="products-text">Ied Mubarak</p>
+                        <div class="profile-picture">
+                          <img
+                            src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                            class=""
+                            width="15"
+                            height="15"
+                          />
+                        </div>
+                        <span class="ms-1 profile-name">Admin</span>
+
+                        <div class="products-like">
+                          <em class="bi bi-heart-fill pe-1"></em>5k
+                        </div>
+                        <div class="products-category">Photo</div>
+                        <div class="products-license text-center">
+                          <img src="/images/icon/icon-premium.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 text-center" data-aos="fade-up">
+                    <button class="btn btn-success btn-rounded px-5 py-2">
+                      View More
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="modal-footer d-flex bd-highlight">
-              <button
-                type="button"
-                class="btn btn-secondary btn-rounded flex-fill bd-highlight"
-                data-bs-dismiss="modal"
-              >
-                Cancel
-              </button>
-              <button
-                type="submit"
-                class="btn btn-warning btn-rounded flex-fill bd-highlight"
-              >
-                Change Password
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -729,20 +828,5 @@
       AOS.init();
     </script>
     <script src="/script/navbar-scroll.js"></script>
-    <script>
-      $("#menu-toggle2").hide();
-      $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#menu-toggle2").show();
-        $("#menu-toggle2").addClass("me-2");
-        $("#wrapper").toggleClass("toggled");
-      });
-      $("#menu-toggle2").click(function (e) {
-        e.preventDefault();
-        $("#menu-toggle2").hide();
-        $("#menu-toggle2").removeClass("me-2");
-        $("#wrapper").toggleClass("toggled");
-      });
-    </script>
   </body>
 </html>

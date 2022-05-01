@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Freecraftstock - Vector</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark navbar-fcs fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="images/logo.svg"
+            alt="Logo"
+            height="20"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="vector.html"
+                >Vector</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="photos.html"
+                >Photos</a
+              >
+            </li>
+          </ul>
+          <!-- Desktop Menu -->
+          <ul class="navbar-nav ms-auto d-none d-lg-flex">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                  alt=""
+                  class="rounded-circle me-2 profile-picture"
+                />Hi, Syamsul
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end"
+                style="min-width: inherit"
+              >
+                <a href="" class="dropdown-item mt-2">
+                  <img
+                    src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                    alt=""
+                    class="rounded-circle me-2 profile-picture"
+                  />Syamsul Hadi
+                </a>
+                <hr class="dropdown-devider" />
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-person-check me-2"></em>Following
+                  <span class="badge rounded-pill bg-secondary float-end"
+                    >99k</span
+                  ></a
+                >
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-heart me-2"></em>Favorites<span
+                    class="badge rounded-pill bg-danger float-end"
+                    >99k</span
+                  ></a
+                >
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-download me-2"></em>Download</a
+                >
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-folder-plus me-2"></em>Collections</a
+                >
+                <hr class="dropdown-devider" />
+                <a href="" class="dropdown-item"
+                  ><em class="bi bi-box-arrow-right me-2"></em>Sign Out</a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-block d-md-none">
+            <li class="nav-item">
+              <a href="" class="nav-link">Hi, Syamsul Hadi</a>
+            </li>
+            <li class="nav-link">
+              <a href="" class="nav-link" class="dropdown-item">Sign Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page-content">
+      <div class="d-flex">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <section class="page-search" data-aos="fade-up">
+            <div class="container-fluid border-bottom">
+              <div class="d-flex bd-highlight py-2 pt-md-3">
+                <div class="flex-fill bd-highlight">
+                  <form>
+                    <div class="input-group">
+                      <button
+                        class="btn btn-dropdown dropdown-toggle btn-rounded"
+                        type="button"
+                        id="dropdownMenuClickableInside"
+                        data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside"
+                        aria-expanded="false"
+                      >
+                        Vectors, Photos
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radiosCategory"
+                              id="radiosCategoryAll"
+                              value="option_category_all"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="radiosCategoryAll"
+                            >
+                              All
+                            </label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radiosCategory"
+                              id="radiosCategoryVectors"
+                              value="option_category_vectors"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="radiosCategoryVectors"
+                            >
+                              Vectors
+                            </label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radiosCategory"
+                              id="radiosCategoryPhotos"
+                              value="option_category_photos"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="radiosCategoryPhotos"
+                            >
+                              Photos
+                            </label>
+                          </div>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radioLicense"
+                              id="radioLicense"
+                              value="option_license_all"
+                              checked
+                            />
+                            <label class="form-check-label" for="radioLicense">
+                              All
+                            </label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radioLicense"
+                              id="radioLicenseFree"
+                              value="option_license_free"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="radioLicenseFree"
+                            >
+                              Free
+                            </label>
+                          </div>
+                        </li>
+                        <li class="dropdown-item">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="radioLicense"
+                              id="radioLicensePremium"
+                              value="option_license_premium"
+                            />
+                            <label
+                              class="form-check-label text-warning"
+                              for="radioLicensePremium"
+                            >
+                              <img
+                                src="/images/icon/icon-premium.svg"
+                                class="me-2 mb-2"
+                                width="15"
+                                height="15"
+                              />Premium
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                      <input
+                        class="form-control"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-success btn-rounded" type="submit">
+                        Search
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="page-nav-profile" data-aos="fade-left">
+            <ul class="nav justify-content-center bg-white py-2 mb-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="profile.html">
+                  <e class="bi bi-person me-2"></e>
+                  <span class="d-none d-md-inline">Profile</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="download.html">
+                  <em class="bi bi-download me-2"></em>
+                  <span class="d-none d-md-inline">Downloads</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="favorite.html">
+                  <em class="bi bi-heart me-2"></em>
+                  <span class="d-none d-md-inline">Favorites</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="collections.html">
+                  <em class="bi bi-folder-plus me-2"></em>
+                  <span class="d-none d-md-inline">Collections</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="follower.html">
+                  <em class="bi bi-person-plus me-2"></em>
+                  <span class="d-none d-md-inline">Follower</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="following.html">
+                  <em class="bi bi-person-check me-2"></em>
+                  <span class="d-none d-md-inline">Following</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="page-follower mb-3">
+            <div class="container">
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12 col-md-3 d-flex align-items-center">
+                          <a href="" class="img-author me-3">
+                            <img
+                              src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                              alt=""
+                            />
+                          </a>
+                          <div class="d-flex flex-column bd-highlight pt-1">
+                            <a href="" class="text-success bd-highlight">
+                              <h6>@syam_hadi</h6>
+                            </a>
+                            <small class="text-muted bd-highlight">
+                              1,054 Followers | 1,200 Contents
+                            </small>
+                            <a href="" class="bd-highlight mt-2">
+                              <h5>View Profile</h5>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="col-md-9 border-start d-md-block d-none">
+                          <div class="d-flex bd-highlight">
+                            <a
+                              href=""
+                              class="pe-2 flex-fill bd-highlight"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <img
+                                src="/images/product/happy-easter-backgroundpaper-art-product-display-podium-mockupbanner-template-designvector-illustration_44481-697.webp"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+                            <a
+                              href=""
+                              class="pe-2 flex-fill bd-highlight"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <img
+                                src="/images/product/happy-easter-backgroundpaper-art-product-display-podium-mockupbanner-template-designvector-illustration_44481-697.webp"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+                            <a
+                              href=""
+                              class="pe-2 flex-fill bd-highlight"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <img
+                                src="/images/product/happy-easter-backgroundpaper-art-product-display-podium-mockupbanner-template-designvector-illustration_44481-697.webp"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+                            <a
+                              href=""
+                              class="pe-2 flex-fill bd-highlight"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <img
+                                src="/images/product/happy-easter-backgroundpaper-art-product-display-podium-mockupbanner-template-designvector-illustration_44481-697.webp"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+                            <a
+                              href=""
+                              class="flex-fill bd-highlight"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <img
+                                src="/images/product/happy-easter-backgroundpaper-art-product-display-podium-mockupbanner-template-designvector-illustration_44481-697.webp"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2 border-top d-md-none d-block">
+                          <div class="d-flex bd-highlight pt-3">
+                            <a
+                              href=""
+                              class="pe-2 flex-fill bd-highlight"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <img
+                                src="/images/product/happy-easter-backgroundpaper-art-product-display-podium-mockupbanner-template-designvector-illustration_44481-697.webp"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+                            <a
+                              href=""
+                              class="flex-fill bd-highlight"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              <img
+                                src="/images/product/happy-easter-backgroundpaper-art-product-display-podium-mockupbanner-template-designvector-illustration_44481-697.webp"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- First modal-->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 col-md-9">
+                <img
+                  src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+                <h6 class="mt-2">Ied Mubarak</h6>
+              </div>
+              <div class="col-12 col-md-3">
+                <img
+                  src="/images/product/flat-eid-al-fitr-background_52683-83876.webp"
+                  class="img-fluid d-none d-md-block"
+                  alt=""
+                />
+                <div class="row mt-3">
+                  <div class="col-12 d-flex bd-highlight">
+                    <button
+                      class="btn btn-sm btn-outline-secondary d-flex flex-fill bd-highlight justify-content-center"
+                    >
+                      <em class="bi bi-folder-plus me-2"></em> Collect
+                    </button>
+                    <button
+                      class="btn btn-sm btn-outline-secondary mx-2 position-relative"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Like"
+                    >
+                      <em class="bi bi-heart"></em
+                      ><span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+
+                    <button
+                      class="btn btn-sm btn-outline-secondary"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Copy Link"
+                    >
+                      <em class="bi bi-link-45deg"></em>
+                    </button>
+                    <button
+                      class="btn btn-sm btn-outline-secondary ms-2"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Comment"
+                    >
+                      <em class="bi bi-chat-left"></em>
+                    </button>
+                  </div>
+                  <div class="d-grid mt-2">
+                    <button class="btn btn-success">Download</button>
+                  </div>
+                  <div class="col-12">
+                    <hr />
+                    <p class="lh-sm">
+                      <em class="bi bi-bounding-box-circles"></em> Vector in IPS
+                      format <a href="">How to edit?</a>
+                    </p>
+                    <p class="lh-sm">
+                      Premium License
+                      <br />
+                      <small
+                        >Go Premium and you will receive a commercial license.
+                        <a href="">More info</a></small
+                      >
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <hr />
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0 profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                      </div>
+                      <div class="flex-grow-1 ms-2">
+                        <div
+                          class="d-flex align-items-start flex-column bd-highlight lh-sm"
+                        >
+                          <div class="bd-highlight">Admin</div>
+                          <small class="bd-highlight pb-1">100k</small>
+                        </div>
+                      </div>
+                      <button
+                        class="btn btn-sm btn-outline-secondary d-flex flex-fill bd-highlight justify-content-center"
+                      >
+                        Follow
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <hr />
+                <div class="form-text mb-2">Recomended</div>
+                <div class="row g-3">
+                  <div
+                    class="col-6 col-md-4 col-lg-3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <a
+                      href=""
+                      class="component-products d-block"
+                      data-bs-target="#staticBackdrop2"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      <div class="products-thumbnail">
+                        <div
+                          class="products-image"
+                          style="
+                            background-image: url('images/product/easter-egg-design-mockup_23-2149355650.webp');
+                          "
+                        ></div>
+                        <p class="products-text">Ied Mubarak</p>
+                        <div class="profile-picture">
+                          <img
+                            src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                            class=""
+                            width="15"
+                            height="15"
+                          />
+                        </div>
+                        <span class="ms-1 profile-name">Admin</span>
+
+                        <div class="products-like">
+                          <em class="bi bi-heart-fill pe-1"></em>5k
+                        </div>
+                        <div class="products-category">Photo</div>
+                        <div class="products-license text-center">
+                          <img src="/images/icon/icon-premium.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-12 text-center" data-aos="fade-up">
+                    <button class="btn btn-success btn-rounded px-5 py-2">
+                      View More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second modal-->
+    <div
+      class="modal fade"
+      id="staticBackdrop2"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-fullscreen-md-down modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 col-md-9">
+                <img
+                  src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+                <h6 class="mt-2">Ied Mubarak</h6>
+              </div>
+              <div class="col-12 col-md-3">
+                <img
+                  src="/images/product/flat-eid-al-fitr-background_52683-83876.webp"
+                  class="img-fluid d-none d-md-block"
+                  alt=""
+                />
+                <div class="row mt-3">
+                  <div class="col-12 d-flex bd-highlight">
+                    <button
+                      class="btn btn-sm btn-outline-secondary d-flex flex-fill bd-highlight justify-content-center"
+                    >
+                      <em class="bi bi-folder-plus me-2"></em> Collect
+                    </button>
+                    <button
+                      class="btn btn-sm btn-outline-secondary mx-2 position-relative"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Like"
+                    >
+                      <em class="bi bi-heart"></em
+                      ><span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+
+                    <button
+                      class="btn btn-sm btn-outline-secondary"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Copy Link"
+                    >
+                      <em class="bi bi-link-45deg"></em>
+                    </button>
+                    <button
+                      class="btn btn-sm btn-outline-secondary ms-2"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Comment"
+                    >
+                      <em class="bi bi-chat-left"></em>
+                    </button>
+                  </div>
+                  <div class="d-grid mt-2">
+                    <button class="btn btn-success">Download</button>
+                  </div>
+                  <div class="col-12">
+                    <hr />
+                    <p class="lh-sm">
+                      <em class="bi bi-bounding-box-circles"></em> Vector in IPS
+                      format <a href="">How to edit?</a>
+                    </p>
+                    <p class="lh-sm">
+                      Premium License
+                      <br />
+                      <small
+                        >Go Premium and you will receive a commercial license.
+                        <a href="">More info</a></small
+                      >
+                    </p>
+                  </div>
+                  <div class="col-12">
+                    <hr />
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0 profile-picture">
+                        <img
+                          src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                          class="mb-1"
+                          width="15"
+                          height="15"
+                        />
+                      </div>
+                      <div class="flex-grow-1 ms-2">
+                        <div
+                          class="d-flex align-items-start flex-column bd-highlight lh-sm"
+                        >
+                          <div class="bd-highlight">Admin</div>
+                          <small class="bd-highlight pb-1">100k</small>
+                        </div>
+                      </div>
+                      <button
+                        class="btn btn-sm btn-outline-secondary d-flex flex-fill bd-highlight justify-content-center"
+                      >
+                        Follow
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <hr />
+                <div class="form-text mb-2">Recomended</div>
+                <div class="row g-3">
+                  <div
+                    class="col-6 col-md-4 col-lg-3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <a
+                      href=""
+                      class="component-products d-block"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      <div class="products-thumbnail">
+                        <div
+                          class="products-image"
+                          style="
+                            background-image: url('images/product/easter-egg-design-mockup_23-2149355650.webp');
+                          "
+                        ></div>
+                        <p class="products-text">Ied Mubarak</p>
+                        <div class="profile-picture">
+                          <img
+                            src="/images/product/easter-egg-design-mockup_23-2149355650.webp"
+                            class=""
+                            width="15"
+                            height="15"
+                          />
+                        </div>
+                        <span class="ms-1 profile-name">Admin</span>
+
+                        <div class="products-like">
+                          <em class="bi bi-heart-fill pe-1"></em>5k
+                        </div>
+                        <div class="products-category">Photo</div>
+                        <div class="products-license text-center">
+                          <img src="/images/icon/icon-premium.svg" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 text-center" data-aos="fade-up">
+                    <button class="btn btn-success btn-rounded px-5 py-2">
+                      View More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted" data-aos="fade-up">
+      <div class="container-fluid">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <em class="bi bi-facebook"></em>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <em class="bi bi-instagram"></em>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <em class="bi bi-google"></em>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <em class="bi bi-youtube"></em>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+      </div>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container-fluid text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img src="/images/logo.svg" alt="" />
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Categories</h6>
+              <p>
+                <a href="#!" class="text-reset">Vector</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Photos</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Term of User</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><em class="bi bi-house me-3"></em> Tangerang, Indonesia</p>
+              <p>
+                <em class="bi bi-envelope me-3"></em>
+                freecrarftstock@gmail.com
+              </p>
+              <p><em class="bi bi-telephone me-3"></em> + 01 234 567 88</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2022 Copyright |
+        <a class="text-reset fw-bold" href="">freecraftstock.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/script/navbar-scroll.js"></script>
+  </body>
+</html>
