@@ -12224,20 +12224,6 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
-.page-author .btn-follow:hover {
-  border-color: #dd4242;
-  background-color: #c5c2c2;
-}
-
-.page-author .btn-follow:hover span {
-  display: none;
-}
-
-.page-author .btn-follow:hover:before {
-  content: "Unfollow";
-  color: #dd4242;
-}
-
 .page-sign-in .sign-in {
   margin-top: 20vh;
 }

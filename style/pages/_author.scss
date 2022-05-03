@@ -10,17 +10,4 @@
   h5 {
     margin-bottom: 0;
   }
-  .btn-follow {
-    &:hover {
-      border-color: rgb(221, 66, 66);
-      background-color: rgb(197, 194, 194);
-    }
-    &:hover span {
-      display: none;
-    }
-    &:hover:before {
-      content: "Unfollow";
-      color: rgb(221, 66, 66);
-    }
-  }
 }
